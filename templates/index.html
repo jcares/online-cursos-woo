@@ -1,0 +1,189 @@
+<!-- ===================================================== -->
+<!-- Cursos Online WooCommerce - PCCURICO.CL -->
+<!-- Plantilla Home Principal -->
+<!-- Compatible con WooCommerce + Elementor -->
+<!-- Propiedad de PCCURICO.CL -->
+<!-- ===================================================== -->
+
+<!-- ============================= -->
+<!-- HEADER -->
+<!-- ============================= -->
+<!-- wp:template-part {"slug":"header","tagName":"header"} /-->
+
+
+<!-- ============================= -->
+<!-- HERO / PORTADA -->
+<!-- ============================= -->
+<!-- wp:group {"className":"pccurico-hero","layout":{"type":"constrained"}} -->
+<div class="wp-block-group pccurico-hero">
+
+  <!-- wp:heading {"textAlign":"center","level":1} -->
+  <h1 class="wp-block-heading has-text-align-center">
+    Cursos Online Profesionales
+  </h1>
+  <!-- /wp:heading -->
+
+  <!-- wp:paragraph {"align":"center"} -->
+  <p class="has-text-align-center">
+    Aprende nuevas habilidades desde cualquier lugar con nuestros cursos online certificados.
+  </p>
+  <!-- /wp:paragraph -->
+
+  <!-- BOTONES -->
+  <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
+  <div class="wp-block-buttons">
+
+    <!-- wp:button -->
+    <div class="wp-block-button">
+      <a class="wp-block-button__link wp-element-button" href="/cursos">
+        Ver Cursos
+      </a>
+    </div>
+    <!-- /wp:button -->
+
+    <!-- wp:button -->
+    <div class="wp-block-button">
+      <a class="wp-block-button__link wp-element-button" href="/mi-cuenta">
+        Acceder a la Plataforma
+      </a>
+    </div>
+    <!-- /wp:button -->
+
+  </div>
+  <!-- /wp:buttons -->
+
+</div>
+<!-- /wp:group -->
+
+
+<!-- ============================= -->
+<!-- CURSOS DESTACADOS -->
+<!-- ============================= -->
+<!-- wp:group {"layout":{"type":"constrained"}} -->
+<div class="wp-block-group">
+
+  <!-- wp:heading {"textAlign":"center","level":2} -->
+  <h2 class="wp-block-heading has-text-align-center">
+    Cursos Destacados
+  </h2>
+  <!-- /wp:heading -->
+
+  <!-- wp:paragraph {"align":"center"} -->
+  <p class="has-text-align-center">
+    Explora nuestros cursos más populares y comienza a capacitarte hoy.
+  </p>
+  <!-- /wp:paragraph -->
+
+  <!-- CURSOS DINÁMICOS DESDE WOOCOMMERCE -->
+  <!-- wp:shortcode -->
+  [products limit="8" columns="4"]
+  <!-- /wp:shortcode -->
+
+</div>
+<!-- /wp:group -->
+
+
+<!-- ============================= -->
+<!-- ESTADÍSTICAS -->
+<!-- ============================= -->
+<!-- wp:columns -->
+<div class="wp-block-columns">
+
+  <!-- CURSOS -->
+  <!-- wp:column -->
+  <div class="wp-block-column">
+    <!-- wp:heading {"textAlign":"center"} -->
+    <h3 class="wp-block-heading has-text-align-center">Cursos</h3>
+    <!-- /wp:heading -->
+    <!-- wp:paragraph {"align":"center"} -->
+    <p class="has-text-align-center">Disponibles</p>
+    <!-- /wp:paragraph -->
+  </div>
+  <!-- /wp:column -->
+
+  <!-- ESTUDIANTES -->
+  <!-- wp:column -->
+  <div class="wp-block-column">
+    <!-- wp:heading {"textAlign":"center"} -->
+    <h3 class="wp-block-heading has-text-align-center">Estudiantes</h3>
+    <!-- /wp:heading -->
+    <!-- wp:paragraph {"align":"center"} -->
+    <p class="has-text-align-center">Inscritos</p>
+    <!-- /wp:paragraph -->
+  </div>
+  <!-- /wp:column -->
+
+  <!-- CERTIFICACIONES -->
+  <!-- wp:column -->
+  <div class="wp-block-column">
+    <!-- wp:heading {"textAlign":"center"} -->
+    <h3 class="wp-block-heading has-text-align-center">Certificaciones</h3>
+    <!-- /wp:heading -->
+    <!-- wp:paragraph {"align":"center"} -->
+    <p class="has-text-align-center">Emitidas</p>
+    <!-- /wp:paragraph -->
+  </div>
+  <!-- /wp:column -->
+
+  <!-- CLASES -->
+  <!-- wp:column -->
+  <div class="wp-block-column">
+    <!-- wp:heading {"textAlign":"center"} -->
+    <h3 class="wp-block-heading has-text-align-center">Clases</h3>
+    <!-- /wp:heading -->
+    <!-- wp:paragraph {"align":"center"} -->
+    <p class="has-text-align-center">Online</p>
+    <!-- /wp:paragraph -->
+  </div>
+  <!-- /wp:column -->
+
+</div>
+<!-- /wp:columns -->
+
+
+<!-- ============================= -->
+<!-- BLOG / ARTÍCULOS -->
+<!-- ============================= -->
+<!-- wp:group {"layout":{"type":"constrained"}} -->
+<div class="wp-block-group">
+
+  <!-- wp:heading {"textAlign":"center"} -->
+  <h2 class="wp-block-heading has-text-align-center">
+    Noticias y Recursos
+  </h2>
+  <!-- /wp:heading -->
+
+  <!-- wp:paragraph {"align":"center"} -->
+  <p class="has-text-align-center">
+    Artículos sobre capacitación, educación online y tecnología.
+  </p>
+  <!-- /wp:paragraph -->
+
+  <!-- LISTADO DE POSTS -->
+  <!-- wp:query {"query":{"perPage":3,"postType":"post","order":"desc","orderBy":"date"}} -->
+  <div class="wp-block-query">
+
+    <!-- wp:post-template {"layout":{"type":"grid","columnCount":3}} -->
+
+    <!-- wp:group -->
+    <div class="wp-block-group">
+      <!-- wp:post-featured-image /-->
+      <!-- wp:post-title {"isLink":true} /-->
+      <!-- wp:post-date /-->
+      <!-- wp:post-excerpt {"moreText":"Leer más"} /-->
+    </div>
+    <!-- /wp:group -->
+
+    <!-- /wp:post-template -->
+
+  </div>
+  <!-- /wp:query -->
+
+</div>
+<!-- /wp:group -->
+
+
+<!-- ============================= -->
+<!-- FOOTER -->
+<!-- ============================= -->
+<!-- wp:template-part {"slug":"footer","tagName":"footer"} /-->

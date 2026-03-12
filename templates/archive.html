@@ -1,0 +1,165 @@
+<!-- ===================================================== -->
+<!-- Cursos Online WordPress - Propiedad de PCCURICO.CL -->
+<!-- Archivo de publicaciones / blog -->
+<!-- Optimizado para Elementor Pro -->
+<!-- ===================================================== -->
+
+
+<!-- ============================= -->
+<!-- ENCABEZADO GLOBAL -->
+<!-- ============================= -->
+<!-- wp:template-part {"slug":"header","tagName":"header"} /-->
+
+
+<!-- ============================= -->
+<!-- PORTADA DE ARCHIVO -->
+<!-- ============================= -->
+<!-- Banner superior con título del archivo -->
+<!-- Compatible con personalización posterior en Elementor -->
+<!-- wp:pattern {"slug":"online-education-academy/cover-with-archive-title"} /-->
+
+
+<!-- ============================= -->
+<!-- CONTENIDO PRINCIPAL -->
+<!-- ============================= -->
+<!-- Contenedor principal del archivo -->
+<!-- wp:group {"tagName":"main","className":"archive-page-sec","layout":{"type":"constrained","contentSize":"80%"}} -->
+<main class="wp-block-group archive-page-sec">
+
+
+  <!-- ============================= -->
+  <!-- ESTRUCTURA DE COLUMNAS -->
+  <!-- ============================= -->
+  <!-- 70% contenido / 30% sidebar -->
+  <!-- wp:columns -->
+  <div class="wp-block-columns">
+
+
+    <!-- ============================= -->
+    <!-- COLUMNA PRINCIPAL -->
+    <!-- ============================= -->
+    <!-- Lista de artículos -->
+    <!-- wp:column {"width":"70%"} -->
+    <div class="wp-block-column" style="flex-basis:70%">
+
+
+      <!-- Contenedor de artículos -->
+      <!-- wp:group {"className":"archive-page"} -->
+      <div class="wp-block-group archive-page">
+
+
+        <!-- ============================= -->
+        <!-- CONSULTA DE PUBLICACIONES -->
+        <!-- ============================= -->
+        <!-- Obtiene artículos del blog -->
+        <!-- wp:query {"queryId":3,"query":{"perPage":10,"postType":"post","order":"desc","orderBy":"date","inherit":true}} -->
+        <div class="wp-block-query">
+
+
+          <!-- ============================= -->
+          <!-- PLANTILLA DE ARTÍCULOS -->
+          <!-- ============================= -->
+          <!-- Diseño de cada post -->
+          <!-- wp:post-template {"className":"style-post-box","layout":{"type":"grid","columnCount":2}} -->
+
+
+          <!-- Tarjeta de artículo -->
+          <!-- wp:group {"className":"main-box-edit","style":{"shadow":"var:preset|shadow|natural","spacing":{"padding":{"top":"15px","bottom":"15px","left":"20px","right":"20px"}}},"backgroundColor":"background"} -->
+          <div class="wp-block-group main-box-edit has-background-background-color has-background"
+          style="padding:15px 20px;box-shadow:var(--wp--preset--shadow--natural)">
+
+
+            <!-- Imagen destacada -->
+            <!-- wp:post-featured-image {"width":"100%","height":"250px"} /-->
+
+
+            <!-- Contenido del artículo -->
+            <!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|40","left":"var:preset|spacing|40","right":"var:preset|spacing|40"}}}} -->
+            <div class="wp-block-group"
+            style="padding:var(--wp--preset--spacing--40)">
+
+
+              <!-- Título del artículo -->
+              <!-- wp:post-title {"isLink":true,"fontSize":"upper-heading"} /-->
+
+
+              <!-- Fecha de publicación -->
+              <!-- wp:post-date {"fontSize":"small"} /-->
+
+
+              <!-- Extracto del artículo -->
+              <!-- Texto adaptado a Español Chile -->
+              <!-- wp:post-excerpt {"moreText":"Leer más","excerptLength":20,"fontSize":"small"} /-->
+
+
+            </div>
+            <!-- /wp:group -->
+
+
+          </div>
+          <!-- /wp:group -->
+          <!-- Fin tarjeta -->
+
+
+          <!-- /wp:post-template -->
+
+
+          <!-- ============================= -->
+          <!-- PAGINACIÓN -->
+          <!-- ============================= -->
+          <!-- Navegación entre páginas -->
+          <!-- wp:query-pagination {"paginationArrow":"chevron"} -->
+
+          <!-- Página anterior -->
+          <!-- wp:query-pagination-previous /-->
+
+          <!-- Números -->
+          <!-- wp:query-pagination-numbers /-->
+
+          <!-- Página siguiente -->
+          <!-- wp:query-pagination-next /-->
+
+          <!-- /wp:query-pagination -->
+
+
+        </div>
+        <!-- /wp:query -->
+
+
+      </div>
+      <!-- /wp:group -->
+
+
+    </div>
+    <!-- /wp:column -->
+
+
+    <!-- ============================= -->
+    <!-- SIDEBAR -->
+    <!-- ============================= -->
+    <!-- Widgets del blog -->
+    <!-- wp:column {"width":"30%"} -->
+    <div class="wp-block-column" style="flex-basis:30%">
+
+
+      <!-- Sidebar del sitio -->
+      <!-- Elementor puede reemplazar esto -->
+      <!-- wp:template-part {"slug":"sidebar"} /-->
+
+
+    </div>
+    <!-- /wp:column -->
+
+
+  </div>
+  <!-- /wp:columns -->
+
+
+</main>
+<!-- /wp:group -->
+
+
+<!-- ============================= -->
+<!-- PIE DE PÁGINA -->
+<!-- ============================= -->
+<!-- wp:template-part {"slug":"footer","tagName":"footer"} /-->

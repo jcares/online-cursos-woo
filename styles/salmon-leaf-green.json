@@ -1,0 +1,46 @@
+{
+  "$schema": "https://schemas.wp.org/wp/6.9/theme.json",
+  "title": "Naranja Cálido",
+  "version": 2,
+  "settings": {
+    "color": {
+      "palette": [
+        {
+          "slug": "primary",
+          "color": "#dcb26d",
+          "name": "Naranja Suave"
+        },
+        {
+          "slug": "secondary",
+          "color": "#FF7A59",
+          "name": "Naranja Principal"
+        },
+        {
+          "slug": "tertiary",
+          "color": "#96dcb8",
+          "name": "Verde Claro"
+        },
+        {
+          "slug": "quaternary",
+          "color": "#009f4d",
+          "name": "Verde"
+        },
+        {
+          "slug": "fifth",
+          "color": "#c1ec2c",
+          "name": "Verde Lima"
+        },
+        {
+          "slug": "foreground",
+          "color": "#000000",
+          "name": "Texto"
+        },
+        {
+          "slug": "background",
+          "color": "#ffffff",
+          "name": "Fondo"
+        }
+      ]
+    }
+  }
+}

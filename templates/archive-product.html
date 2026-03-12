@@ -1,0 +1,28 @@
+<!-- ===================================================== -->
+<!-- Listado de Productos WooCommerce - PCCURICO.CL -->
+<!-- Plantilla Archive Product -->
+<!-- Compatible con WooCommerce + Elementor -->
+<!-- Propiedad de PCCURICO.CL -->
+<!-- ===================================================== -->
+
+<!-- HEADER -->
+<!-- wp:template-part {"slug":"header","tagName":"header"} /-->
+
+<!-- TIENDA -->
+<!-- wp:group {"layout":{"type":"constrained"}} -->
+<div class="wp-block-group pccurico-product-archive">
+
+    <!-- wp:heading {"level":1,"textAlign":"center"} -->
+    <h1 class="wp-block-heading has-text-align-center">Nuestros Cursos</h1>
+    <!-- /wp:heading -->
+
+    <!-- LISTADO DE PRODUCTOS DINÁMICOS -->
+    <!-- wp:shortcode -->
+    <?php echo do_shortcode('[products limit="12" columns="4" orderby="date" order="DESC"]'); ?>
+    <!-- /wp:shortcode -->
+
+</div>
+<!-- /wp:group -->
+
+<!-- FOOTER -->
+<!-- wp:template-part {"slug":"footer","tagName":"footer"} /-->

@@ -1,0 +1,128 @@
+<!-- ===================================================== -->
+<!-- Cursos Online WordPress - Propiedad de PCCURICO.CL -->
+<!-- Resultados de búsqueda del blog -->
+<!-- Optimizado para Elementor Pro -->
+<!-- ===================================================== -->
+
+<!-- ============================= -->
+<!-- ENCABEZADO GLOBAL -->
+<!-- ============================= -->
+<!-- wp:template-part {"slug":"header","tagName":"header"} /-->
+
+
+<!-- ============================= -->
+<!-- BANNER / TÍTULO DE BÚSQUEDA -->
+<!-- ============================= -->
+<!-- wp:group {"className":"search-banner","layout":{"type":"constrained"}} -->
+<div class="wp-block-group search-banner">
+
+<!-- Título dinámico de búsqueda -->
+<!-- wp:heading {"level":1,"textAlign":"center"} -->
+<h1 class="wp-block-heading has-text-align-center">
+Resultados de búsqueda: <!-- wp:search-query /-->
+</h1>
+<!-- /wp:heading -->
+
+</div>
+<!-- /wp:group -->
+
+
+<!-- ============================= -->
+<!-- CONTENIDO PRINCIPAL -->
+<!-- ============================= -->
+<!-- Contenedor principal de resultados -->
+<!-- wp:group {"tagName":"main","className":"search-results-sec","layout":{"type":"constrained","contentSize":"80%"}} -->
+<main class="wp-block-group search-results-sec">
+
+<!-- ============================= -->
+<!-- ESTRUCTURA DE COLUMNAS -->
+<!-- ============================= -->
+<!-- 70% resultados / 30% sidebar -->
+<!-- wp:columns -->
+<div class="wp-block-columns">
+
+<!-- ============================= -->
+<!-- COLUMNA PRINCIPAL -->
+<!-- ============================= -->
+<!-- wp:column {"width":"70%"} -->
+<div class="wp-block-column" style="flex-basis:70%">
+
+<!-- Lista de posts -->
+<!-- wp:group {"className":"search-posts-list"} -->
+<div class="wp-block-group search-posts-list">
+
+<!-- Consulta dinámica de posts -->
+<!-- wp:query {"queryId":1,"query":{"perPage":10,"postType":"post","order":"desc","orderBy":"date"}} -->
+<div class="wp-block-query">
+
+<!-- Plantilla de post -->
+<!-- wp:post-template {"layout":{"type":"grid","columnCount":2}} -->
+
+<!-- Tarjeta de post -->
+<!-- wp:group {"className":"post-card","style":{"spacing":{"padding":{"top":"15px","bottom":"15px","left":"15px","right":"15px"}}}} -->
+<div class="wp-block-group post-card" style="padding:15px">
+
+<!-- Imagen destacada -->
+<!-- wp:post-featured-image {"width":"100%","height":"250px"} /-->
+
+<!-- Título del post -->
+<!-- wp:post-title {"isLink":true,"level":3} /-->
+
+<!-- Fecha de publicación -->
+<!-- wp:post-date {"fontSize":"small"} /-->
+
+<!-- Extracto del post -->
+<!-- Texto adaptado a Español Chile -->
+<!-- wp:post-excerpt {"moreText":"Leer más","excerptLength":20,"fontSize":"small"} /-->
+
+</div>
+<!-- /wp:group -->
+<!-- Fin tarjeta -->
+
+<!-- /wp:post-template -->
+
+<!-- ============================= -->
+<!-- PAGINACIÓN -->
+<!-- ============================= -->
+<!-- wp:query-pagination {"paginationArrow":"chevron"} -->
+<!-- Página anterior -->
+<!-- wp:query-pagination-previous /-->
+<!-- Números -->
+<!-- wp:query-pagination-numbers /-->
+<!-- Página siguiente -->
+<!-- wp:query-pagination-next /-->
+<!-- /wp:query-pagination -->
+
+</div>
+<!-- /wp:query -->
+
+</div>
+<!-- /wp:group -->
+
+</div>
+<!-- /wp:column -->
+
+<!-- ============================= -->
+<!-- SIDEBAR -->
+<!-- ============================= -->
+<!-- wp:column {"width":"30%"} -->
+<div class="wp-block-column" style="flex-basis:30%">
+
+<!-- Widgets del blog -->
+<!-- Elementor puede reemplazar esto -->
+<!-- wp:template-part {"slug":"sidebar"} /-->
+
+</div>
+<!-- /wp:column -->
+
+</div>
+<!-- /wp:columns -->
+
+</main>
+<!-- /wp:group -->
+
+
+<!-- ============================= -->
+<!-- PIE DE PÁGINA -->
+<!-- ============================= -->
+<!-- wp:template-part {"slug":"footer","tagName":"footer"} /-->

@@ -1,0 +1,75 @@
+<!-- ===================================================== -->
+<!-- Cursos Online WordPress - Propiedad de PCCURICO.CL -->
+<!-- Entrada individual con sidebar a la derecha -->
+<!-- Optimizado para Elementor Pro -->
+<!-- ===================================================== -->
+
+<!-- ============================= -->
+<!-- ENCABEZADO GLOBAL -->
+<!-- ============================= -->
+<!-- wp:template-part {"slug":"header","tagName":"header"} /-->
+
+
+<!-- ============================= -->
+<!-- CONTENIDO PRINCIPAL -->
+<!-- ============================= -->
+<!-- Contenedor principal del post -->
+<!-- wp:group {"tagName":"main","className":"single-post-sidebar-right","layout":{"type":"constrained","contentSize":"80%"}} -->
+<main class="wp-block-group single-post-sidebar-right">
+
+<!-- ============================= -->
+<!-- ESTRUCTURA DE COLUMNAS -->
+<!-- ============================= -->
+<!-- Contenido principal (70%) / Sidebar derecha (30%) -->
+<!-- wp:columns -->
+<div class="wp-block-columns">
+
+<!-- ============================= -->
+<!-- COLUMNA CONTENIDO -->
+<!-- ============================= -->
+<!-- wp:column {"width":"70%"} -->
+<div class="wp-block-column" style="flex-basis:70%">
+
+<!-- Contenedor del contenido del post -->
+<!-- wp:group {"className":"single-post-content"} -->
+<div class="wp-block-group single-post-content">
+
+<!-- Título del post -->
+<!-- wp:post-title {"level":1} /-->
+
+<!-- Fecha del post -->
+<!-- wp:post-date {"fontSize":"small"} /-->
+
+<!-- Contenido del post -->
+<!-- wp:post-content /-->
+
+</div>
+<!-- /wp:group -->
+
+</div>
+<!-- /wp:column -->
+
+<!-- ============================= -->
+<!-- COLUMNA SIDEBAR -->
+<!-- ============================= -->
+<!-- wp:column {"width":"30%"} -->
+<div class="wp-block-column" style="flex-basis:30%">
+
+<!-- Sidebar del sitio -->
+<!-- Elementor puede reemplazar esto -->
+<!-- wp:template-part {"slug":"sidebar"} /-->
+
+</div>
+<!-- /wp:column -->
+
+</div>
+<!-- /wp:columns -->
+
+</main>
+<!-- /wp:group -->
+
+
+<!-- ============================= -->
+<!-- PIE DE PÁGINA -->
+<!-- ============================= -->
+<!-- wp:template-part {"slug":"footer","tagName":"footer"} /-->

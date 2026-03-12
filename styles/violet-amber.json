@@ -1,0 +1,46 @@
+{
+  "$schema": "https://schemas.wp.org/wp/6.9/theme.json",
+  "title": "Turquesa Verdoso",
+  "version": 2,
+  "settings": {
+    "color": {
+      "palette": [
+        {
+          "slug": "primary",
+          "color": "#d7cfe5",
+          "name": "Lila Claro"
+        },
+        {
+          "slug": "secondary",
+          "color": "#9553FF",
+          "name": "Violeta"
+        },
+        {
+          "slug": "tertiary",
+          "color": "#fbdfa7",
+          "name": "Amarillo Claro"
+        },
+        {
+          "slug": "quaternary",
+          "color": "#ffa700",
+          "name": "Naranja"
+        },
+        {
+          "slug": "fifth",
+          "color": "#ec2359",
+          "name": "Rojo"
+        },
+        {
+          "slug": "foreground",
+          "color": "#000000",
+          "name": "Texto"
+        },
+        {
+          "slug": "background",
+          "color": "#ffffff",
+          "name": "Fondo"
+        }
+      ]
+    }
+  }
+}

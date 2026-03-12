@@ -1,0 +1,46 @@
+{
+  "$schema": "https://schemas.wp.org/wp/6.9/theme.json",
+  "title": "Naranja",
+  "version": 2,
+  "settings": {
+    "color": {
+      "palette": [
+        {
+          "slug": "primary",
+          "color": "#e5b1b1",
+          "name": "Primario"
+        },
+        {
+          "slug": "secondary",
+          "color": "#dc0707",
+          "name": "Naranja Intenso"
+        },
+        {
+          "slug": "tertiary",
+          "color": "#aceee8",
+          "name": "Turquesa Claro"
+        },
+        {
+          "slug": "quaternary",
+          "color": "#16a596",
+          "name": "Turquesa"
+        },
+        {
+          "slug": "fifth",
+          "color": "#b230a2",
+          "name": "Complementario"
+        },
+        {
+          "slug": "foreground",
+          "color": "#000000",
+          "name": "Texto"
+        },
+        {
+          "slug": "background",
+          "color": "#ffffff",
+          "name": "Fondo"
+        }
+      ]
+    }
+  }
+}

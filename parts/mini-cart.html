@@ -1,0 +1,45 @@
+<!-- wp:woocommerce/mini-cart-contents -->
+<div class="wp-block-woocommerce-mini-cart-contents">
+	<!-- Contenido cuando hay productos en el carrito -->
+	<div class="wp-block-woocommerce-filled-mini-cart-contents-block">
+		<!-- Título del mini carrito -->
+		<div class="wp-block-woocommerce-mini-cart-title-block">
+			<div class="wp-block-woocommerce-mini-cart-title-label-block">
+				<?php echo esc_html__('Carrito', 'pccurico'); ?>
+			</div>
+			<div class="wp-block-woocommerce-mini-cart-title-items-counter-block">
+				<?php echo esc_html__('Productos', 'pccurico'); ?>
+			</div>
+		</div>
+
+		<!-- Lista de productos -->
+		<div class="wp-block-woocommerce-mini-cart-items-block">
+			<div class="wp-block-woocommerce-mini-cart-products-table-block"></div>
+		</div>
+
+		<!-- Botones de carrito -->
+		<div class="wp-block-woocommerce-mini-cart-footer-block">
+			<div class="wp-block-woocommerce-mini-cart-cart-button-block">
+				<a href="<?php echo wc_get_cart_url(); ?>" class="wp-block-button__link">
+					<?php echo esc_html__('Ver Carrito', 'pccurico'); ?>
+				</a>
+			</div>
+			<div class="wp-block-woocommerce-mini-cart-checkout-button-block">
+				<a href="<?php echo wc_get_checkout_url(); ?>" class="wp-block-button__link">
+					<?php echo esc_html__('Pagar', 'pccurico'); ?>
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<!-- Contenido cuando el carrito está vacío -->
+	<div class="wp-block-woocommerce-empty-mini-cart-contents-block">
+		<p><?php echo esc_html__('Tu carrito está vacío.', 'pccurico'); ?></p>
+		<div class="wp-block-woocommerce-mini-cart-shopping-button-block">
+			<a href="<?php echo get_permalink( wc_get_page_id( 'shop' ) ); ?>" class="wp-block-button__link">
+				<?php echo esc_html__('Ir a la tienda', 'pccurico'); ?>
+			</a>
+		</div>
+	</div>
+</div>
+<!-- /wp:woocommerce/mini-cart-contents -->

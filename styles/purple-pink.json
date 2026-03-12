@@ -1,0 +1,46 @@
+{
+  "$schema": "https://schemas.wp.org/wp/6.9/theme.json",
+  "title": "Rojo",
+  "version": 2,
+  "settings": {
+    "color": {
+      "palette": [
+        {
+          "slug": "primary",
+          "color": "#d5b3e9",
+          "name": "Primario"
+        },
+        {
+          "slug": "secondary",
+          "color": "#8955a9",
+          "name": "Secundario"
+        },
+        {
+          "slug": "tertiary",
+          "color": "#d5bac2",
+          "name": "Rosado Claro"
+        },
+        {
+          "slug": "quaternary",
+          "color": "#df678c",
+          "name": "Rosado Intenso"
+        },
+        {
+          "slug": "fifth",
+          "color": "#5525c6",
+          "name": "Violeta"
+        },
+        {
+          "slug": "foreground",
+          "color": "#000000",
+          "name": "Texto"
+        },
+        {
+          "slug": "background",
+          "color": "#ffffff",
+          "name": "Fondo"
+        }
+      ]
+    }
+  }
+}

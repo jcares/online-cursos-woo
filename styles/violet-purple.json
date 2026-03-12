@@ -1,0 +1,46 @@
+{
+  "$schema": "https://schemas.wp.org/wp/6.9/theme.json",
+  "title": "Violeta Púrpura",
+  "version": 2,
+  "settings": {
+    "color": {
+      "palette": [
+        {
+          "slug": "primary",
+          "color": "#dbd6f0",
+          "name": "Lila Claro"
+        },
+        {
+          "slug": "secondary",
+          "color": "#7d64f5",
+          "name": "Violeta"
+        },
+        {
+          "slug": "tertiary",
+          "color": "#4317cf",
+          "name": "Púrpura"
+        },
+        {
+          "slug": "quaternary",
+          "color": "#18035a",
+          "name": "Violeta Oscuro"
+        },
+        {
+          "slug": "fifth",
+          "color": "#f22c2c",
+          "name": "Rojo Complementario"
+        },
+        {
+          "slug": "foreground",
+          "color": "#000000",
+          "name": "Texto"
+        },
+        {
+          "slug": "background",
+          "color": "#ffffff",
+          "name": "Fondo"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,127 @@
+<!-- ===================================================== -->
+<!-- Cursos Online WordPress - Propiedad de PCCURICO.CL -->
+<!-- Resultados de búsqueda de productos -->
+<!-- Optimizado para Elementor Pro + WooCommerce -->
+<!-- ===================================================== -->
+
+<!-- ============================= -->
+<!-- ENCABEZADO GLOBAL -->
+<!-- ============================= -->
+<!-- wp:template-part {"slug":"header","tagName":"header"} /-->
+
+
+<!-- ============================= -->
+<!-- BANNER / TÍTULO DE BÚSQUEDA -->
+<!-- ============================= -->
+<!-- wp:group {"className":"product-search-banner","layout":{"type":"constrained"}} -->
+<div class="wp-block-group product-search-banner">
+
+<!-- Título dinámico de búsqueda -->
+<!-- wp:heading {"level":1,"textAlign":"center"} -->
+<h1 class="wp-block-heading has-text-align-center">
+Resultados de búsqueda: <!-- wp:search-query /-->
+</h1>
+<!-- /wp:heading -->
+
+</div>
+<!-- /wp:group -->
+
+
+<!-- ============================= -->
+<!-- CONTENIDO PRINCIPAL -->
+<!-- ============================= -->
+<!-- Contenedor principal de resultados -->
+<!-- wp:group {"tagName":"main","className":"product-search-results-sec","layout":{"type":"constrained","contentSize":"80%"}} -->
+<main class="wp-block-group product-search-results-sec">
+
+<!-- ============================= -->
+<!-- ESTRUCTURA DE COLUMNAS -->
+<!-- ============================= -->
+<!-- 70% resultados / 30% sidebar -->
+<!-- wp:columns -->
+<div class="wp-block-columns">
+
+<!-- ============================= -->
+<!-- COLUMNA PRINCIPAL -->
+<!-- ============================= -->
+<!-- wp:column {"width":"70%"} -->
+<div class="wp-block-column" style="flex-basis:70%">
+
+<!-- Lista de productos -->
+<!-- wp:group {"className":"search-products-list"} -->
+<div class="wp-block-group search-products-list">
+
+<!-- Consulta dinámica de productos -->
+<!-- wp:query {"queryId":1,"query":{"perPage":12,"postType":"product","order":"desc","orderBy":"date"}} -->
+<div class="wp-block-query">
+
+<!-- Plantilla de producto -->
+<!-- wp:post-template {"layout":{"type":"grid","columnCount":3}} -->
+
+<!-- Tarjeta de producto -->
+<!-- wp:group {"className":"product-card","style":{"spacing":{"padding":{"top":"15px","bottom":"15px","left":"15px","right":"15px"}}}} -->
+<div class="wp-block-group product-card" style="padding:15px">
+
+<!-- Imagen del producto -->
+<!-- wp:post-featured-image {"width":"100%","height":"250px"} /-->
+
+<!-- Título del producto -->
+<!-- wp:post-title {"isLink":true,"level":3} /-->
+
+<!-- Precio del producto -->
+<!-- wp:post-terms {"term":"product_cat","className":"product-price"} /-->
+
+<!-- Botón de agregar al carrito -->
+<!-- wp:woocommerce/add-to-cart {"showQuantity":true} /-->
+
+</div>
+<!-- /wp:group -->
+<!-- Fin tarjeta -->
+
+<!-- /wp:post-template -->
+
+<!-- ============================= -->
+<!-- PAGINACIÓN -->
+<!-- ============================= -->
+<!-- wp:query-pagination {"paginationArrow":"chevron"} -->
+<!-- Página anterior -->
+<!-- wp:query-pagination-previous /-->
+<!-- Números -->
+<!-- wp:query-pagination-numbers /-->
+<!-- Página siguiente -->
+<!-- wp:query-pagination-next /-->
+<!-- /wp:query-pagination -->
+
+</div>
+<!-- /wp:query -->
+
+</div>
+<!-- /wp:group -->
+
+</div>
+<!-- /wp:column -->
+
+<!-- ============================= -->
+<!-- SIDEBAR -->
+<!-- ============================= -->
+<!-- wp:column {"width":"30%"} -->
+<div class="wp-block-column" style="flex-basis:30%">
+
+<!-- Widgets del sitio -->
+<!-- Elementor puede reemplazar esto -->
+<!-- wp:template-part {"slug":"sidebar"} /-->
+
+</div>
+<!-- /wp:column -->
+
+</div>
+<!-- /wp:columns -->
+
+</main>
+<!-- /wp:group -->
+
+
+<!-- ============================= -->
+<!-- PIE DE PÁGINA -->
+<!-- ============================= -->
+<!-- wp:template-part {"slug":"footer","tagName":"footer"} /-->
