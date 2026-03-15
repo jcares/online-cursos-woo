@@ -1,25 +1,17 @@
-@charset "UTF-8";
-/*!
-Theme Name: Online Education Academy
-Theme URI: https://www.seothemesexpert.com/products/online-education-academy-theme
-Author: drakearthur
-Author URI: https://www.seothemesexpert.com/
-Description: The Online Education Academy is a powerful, multipurpose WordPress theme designed to meet the growing needs of modern digital learning environments. Built with a clean, minimal, and elegant layout, this theme delivers a sophisticated and luxurious look that suits schools, colleges, coaching institutes, and training agencies. Whether you are building an online learning system or a full-featured e learning platform, this theme offers everything required to create a professional and engaging educational website. Optimized for performance, the theme comes with clean, secure, and optimized codes that ensure faster page load time and smooth navigation. Its responsive and mobile-friendly design looks stunning across all devices, making it ideal for a remote learning LMS or online teaching system. Retina-ready visuals, beautiful banners, and animated elements enhance user engagement while maintaining a modern and interactive interface. The Online Education Academy seamlessly supports virtual classroom software integration and works efficiently as an LMS for schools, enabling educators to manage courses, lessons, and learning resources with ease. It also supports advanced digital education tools, allowing institutions to deliver structured and effective online education experiences. Customization is effortless with multiple personalization options, Bootstrap framework support, and handy shortcodes. Developers will appreciate the clean code structure, while non-technical users can easily modify layouts, colors, and fonts. Additional sections like Team, Testimonials, and Social Media integration help build credibility and trust. With a strong Call to Action Button (CTA), agency-friendly structure, and translation-ready features, the Online Education Academy is perfect for global audiences. Modern, user-friendly, and visually stunning, it’s a complete solution for creating a scalable and future-ready online learning system.
-Version: 1.3
-Requires at least: 5.9
-Tested up to: 6.9
-Requires PHP: 5.6
-License: GPLv3 or later
-License URI: http://www.gnu.org/licenses/gpl-3.0.html
-Text Domain: online-education-academy
-Tags: one-column, two-columns, three-columns, four-columns, left-sidebar, right-sidebar, grid-layout, wide-blocks, editor-style, full-width-template, custom-background, custom-colors, custom-header, custom-logo, custom-menu, sticky-post, featured-images, footer-widgets, flexible-header, featured-image-header, post-formats, theme-options, threaded-comments, translation-ready, rtl-language-support, blog, portfolio, education
-
-This theme, like WordPress, is licensed under the GPL.
-Use it to make something cool, have fun, and share what you've learned.
-
-Online Education Academy is based on Twenty Twenty-Two WordPress Theme, (C) 2021 WordPress.org
-Twenty Twenty-Two is distributed under the terms of the GNU GPL.
-
+/*
+Theme Name: Online Cursos PCCURICO
+Theme URI: https://pccurico.cl
+Author: PCCURICO
+Author URI: https://pccurico.cl
+Description: Tema WordPress desarrollado para la plataforma de cursos online PCCURICO. Compatible con Elementor Pro, WooCommerce y optimizado para academias, capacitación online y plataformas LMS.
+Version: 1.0.0
+Requires at least: 6.0
+Tested up to: 6.5
+Requires PHP: 7.4
+License: GPL v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: online-cursos-woo
+Tags: education, elearning, courses, lms, woocommerce, elementor, training
 */
 
 *,
@@ -2478,7 +2470,7 @@ a.wc-block-components-checkout-return-to-cart-button{
     font-size: 13px !important;
   }
   .header-btn a{
-    padding-: 7px 20px !important;
+    padding: 7px 20px !important;
     font-size: 13px !important;
   }
 }
@@ -2591,7 +2583,7 @@ figure.wp-block-image.aligncenter.size-full.is-resized.slider-main-img img{
 }
 @media screen and (max-width: 991px){
   .header-btn a{
-    padding-: 7px 20px !important;
+    padding: 7px 20px !important;
     font-size: 13px !important;
   }
    .header-sec button.wp-block-navigation__responsive-container-close{

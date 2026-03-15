@@ -2437,7 +2437,7 @@ a.wc-block-components-checkout-return-to-cart-button{
     font-size: 13px !important;
   }
   .header-btn a{
-    padding-: 7px 20px !important;
+    padding: 7px 20px !important;
     font-size: 13px !important;
   }
 }
@@ -2521,7 +2521,7 @@ a.wc-block-components-checkout-return-to-cart-button{
 }
 @media screen and (max-width: 991px){
   .header-btn a{
-    padding-: 7px 20px !important;
+    padding: 7px 20px !important;
     font-size: 13px !important;
   }
    .header-sec button.wp-block-navigation__responsive-container-close{

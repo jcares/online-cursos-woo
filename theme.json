@@ -1,5 +1,5 @@
 {
-	"$schema": "https://schemas.wp.org/wp/6.9/theme.json",
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
 	"version": 2,
 
 	"settings": {
@@ -11,7 +11,7 @@
 		},
 
 		"spacing": {
-			"units": [ "px", "em", "rem", "%", "vw" ]
+			"units": ["px","em","rem","%","vw"]
 		},
 
 		"typography": {
@@ -59,43 +59,13 @@
 	"customTemplates": [
 		{
 			"name": "blank",
-			"postTypes": [ "page", "post" ],
+			"postTypes": ["page","post"],
 			"title": "Plantilla en Blanco"
 		},
 		{
 			"name": "page-no-title",
-			"postTypes": [ "page" ],
-			"title": "Página (Sin Título / Imagen Destacada)"
-		},
-		{
-			"name": "blog-sidebar-on-left",
-			"postTypes": [ "page" ],
-			"title": "Blog con Barra Lateral Izquierda"
-		},
-		{
-			"name": "blog-sidebar-on-right",
-			"postTypes": [ "page" ],
-			"title": "Blog con Barra Lateral Derecha"
-		},
-		{
-			"name": "single-page-sidebar-on-right",
-			"postTypes": [ "page" ],
-			"title": "Página con Barra Lateral Derecha"
-		},
-		{
-			"name": "single-page-sidebar-on-left",
-			"postTypes": [ "page" ],
-			"title": "Página con Barra Lateral Izquierda"
-		},
-		{
-			"name": "single-post-sidebar-on-right",
-			"postTypes": [ "post" ],
-			"title": "Entrada con Barra Lateral Derecha"
-		},
-		{
-			"name": "single-post-sidebar-on-left",
-			"postTypes": [ "post" ],
-			"title": "Entrada con Barra Lateral Izquierda"
+			"postTypes": ["page"],
+			"title": "Página sin título"
 		}
 	],
 
@@ -108,12 +78,12 @@
 		{
 			"area": "footer",
 			"name": "footer",
-			"title": "Pie de Página"
+			"title": "Pie de página"
 		},
 		{
-			"area": "uncategorized",
+			"area": "sidebar",
 			"name": "sidebar",
-			"title": "Barra Lateral"
+			"title": "Barra lateral"
 		}
 	]
 }
